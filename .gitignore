@@ -1,2 +1,5 @@
 .terraform.lock.hcl
-.terraform/
+.terraform/*
+terraform.tfstate
+apps.credentials.json
+.terraform.tfstate.lock.info
