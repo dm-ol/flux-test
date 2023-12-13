@@ -10,3 +10,10 @@ module "gke_cluster" {
   GKE_MACHINE_TYPE = var.GKE_MACHINE_TYPE
   GKE_NUM_NODES    = var.GKE_NUM_NODES
 }
+
+terraform {
+  backend "gcs" {
+    bucket = "terra-test"
+    prefix = "terraform/state"
+  }
+}
