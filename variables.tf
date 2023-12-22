@@ -30,6 +30,7 @@ variable "GKE_NUM_NODES" {
 
 variable "GITHUB_OWNER" {
   type        = string
+  default     = "dm-ol"
   description = "The GitHub owner"
 }
 
