@@ -16,8 +16,30 @@ variable "GKE_MACHINE_TYPE" {
   description = "Machine type"
 }
 
+variable "GKE_CLUSTER_NAME" {
+  type        = string
+  default     = "gke-flux"
+  description = "GKE cluster name"
+}
+
 variable "GKE_NUM_NODES" {
   type        = number
   default     = 2
   description = "GKE nodes number"
+}
+
+variable "GITHUB_OWNER" {
+  type        = string
+  description = "The GitHub owner"
+}
+
+variable "GITHUB_TOKEN" {
+  type        = string
+  description = "GitHub personal access token"
+}
+
+variable "FLUX_GITHUB_REPO" {
+  type        = string
+  default     = "gke-flux"
+  description = "GitHub repository"
 }
