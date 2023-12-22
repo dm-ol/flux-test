@@ -4,4 +4,3 @@ terraform.tfstate
 apps.credentials.json
 .terraform.tfstate.lock.info
 terraform.tfstate.backup
-vars.tfvars
